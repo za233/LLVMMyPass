@@ -11,6 +11,7 @@ My toy llvm passes
 - BogusControlFlow 虚假控制流，但是是随机生成的表达式
 # usage
 目前没有集成到llvm项目中去，可以编译成so玩玩
+
 clang `llvm-config --cxxflags` -Wl,-znodelete -fno-rtti -fPIC -shared VarObfu.cpp -o Var.so `llvm-config --ldflags`
 
 clang -S -emit-llvm test.cpp -o test.ll
