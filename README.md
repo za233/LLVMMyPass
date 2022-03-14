@@ -1,5 +1,5 @@
 # LLVMMyPass
-My toy llvm passes
+My toy llvm obfusacte passes
 # passes
 - Flatten.cpp 普通的控制流平坦化
 - MyFlatten.cpp 使用区间判断，多个预分发块的控制流平坦化
