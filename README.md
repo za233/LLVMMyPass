@@ -6,9 +6,11 @@ My toy llvm obfusacte passes
 - ConstantReplace.cpp 使用全局变量的常量混淆
 - ConstantReplace2.cpp 使用局部变量的常量混淆
 - VMFlatten.cpp 将平坦化以虚拟机的形式组织，控制流关系在opcode中
-- VariableRotation.cpp 变量轮转混淆
+- VariableRotation.cpp 变量轮转混淆，时不时的轮转内存区域
 - DataObfusactor.cpp 数据流混淆，加入大量垃圾代码，混淆变量之间关系
 - BogusControlFlow 虚假控制流，但是是随机生成的表达式
+- LLVMVM.cpp 将对目标函数实现虚拟化，目前还没有支持struct
+- FunctionCombine.cpp 将多个函数合并，需要函数的返回值一致才能合并
 # usage
 目前没有集成到llvm项目中去，可以编译成so玩玩
 ```
